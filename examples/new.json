@@ -1,0 +1,36 @@
+{
+  "format": "msi-upgrade-range",
+  "schema_version": 1,
+  "properties": {
+    "ProductCode": "{00000000-0000-0000-0000-000000000002}",
+    "UpgradeCode": "{10000000-0000-0000-0000-000000000001}",
+    "ProductVersion": "2.0.0",
+    "ProductLanguage": "1033",
+    "ALLUSERS": "1",
+    "SecureCustomProperties": "OLDPRODUCTS"
+  },
+  "upgrade_rows": [
+    {
+      "UpgradeCode": "{10000000-0000-0000-0000-000000000001}",
+      "VersionMin": "0.0.0",
+      "VersionMax": "2.0.0",
+      "Language": null,
+      "Attributes": 256,
+      "Remove": null,
+      "ActionProperty": "OLDPRODUCTS"
+    }
+  ],
+  "execute_sequence": [
+    {
+      "Action": "FindRelatedProducts",
+      "Condition": null,
+      "Sequence": 200
+    },
+    {
+      "Action": "RemoveExistingProducts",
+      "Condition": null,
+      "Sequence": 1450
+    }
+  ]
+}
+

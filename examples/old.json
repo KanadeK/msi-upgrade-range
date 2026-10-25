@@ -1,0 +1,15 @@
+{
+  "format": "msi-upgrade-range",
+  "schema_version": 1,
+  "properties": {
+    "ProductCode": "{00000000-0000-0000-0000-000000000001}",
+    "UpgradeCode": "{10000000-0000-0000-0000-000000000001}",
+    "ProductVersion": "1.0.0",
+    "ProductLanguage": "1033",
+    "ALLUSERS": "1",
+    "SecureCustomProperties": "OLDPRODUCTS"
+  },
+  "upgrade_rows": [],
+  "execute_sequence": []
+}
+
